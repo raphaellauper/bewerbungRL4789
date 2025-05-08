@@ -1,12 +1,26 @@
-# React + Vite
+# Bewerbungssystem – Raphael Lauper (Version 4789)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dieses Projekt ist eine modulare, adaptive und ethisch durchdachte Online-/Offline-Bewerbung.  
+Es wurde gestaltet, geschrieben und strukturiert auf Basis des 4789-Prinzips:
 
-Currently, two official plugins are available:
+- **4** = Korrektheit
+- **7** = Selbstreflexion
+- **8** = Lernfähigkeit
+- **9** = Verantwortung
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Inhalte
 
-## Expanding the ESLint configuration
+- **Motivationsschreiben:** `src/Motivation.jsx`
+- **Lebenslauf:** `src/Lebenslauf.jsx`
+- **Projekte:** `src/projekte.js`
+- **PDF-Export (lokal, offline):** `html2pdf.custom.js` + `PdfExportButton.jsx`
+- **Designsteuerung:** `tailwind.config.js` + `index.css`
+- **Zentrale Eingabe:** `config.json`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Verwendung
+
+### Lokale Vorschau starten
+
+```bash
+npm install
+VITE_FS_WATCHER_POLLING=true npm run dev -- --host
