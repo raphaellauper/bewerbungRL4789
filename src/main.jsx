@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
-import PdfExportButton from './PdfExportButton';
+import PdfExportButton from './PdfExportButton.jsx';
 
 function App() {
   const [seite, setSeite] = useState('motivation');
