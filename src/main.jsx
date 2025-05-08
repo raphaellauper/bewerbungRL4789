@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { projekte } from './projekte';
-import Motivation from './Motivation';
-import Lebenslauf from './Lebenslauf';
+import { projekte } from './projekte.jsx';
+import Motivation from './Motivation.jsx';
+import Lebenslauf from './Lebenslauf.jsx';
 
 function Projekte() {
   return (
