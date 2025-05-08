@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import PdfExportButton from './PdfExportButton.jsx';
+import Motivation from './Motivation.jsx';
+import Lebenslauf from './Lebenslauf.jsx';
+import Projekte from './projekte.js';
 
 function App() {
   const [seite, setSeite] = useState('motivation');
@@ -13,9 +16,9 @@ function App() {
         <button onClick={() => setSeite('projekte')} className={seite === 'projekte' ? 'font-bold underline' : ''}>Projekte</button>
         <button onClick={() => setSeite('cv')} className={seite === 'cv' ? 'font-bold underline' : ''}>Lebenslauf</button>
       </header>
-      {seite === 'motivation' && <section><h1 className="text-2xl font-bold mb-4">Motivationsschreiben</h1><p>Diese Bewerbung ist mehr als ein PDF – sie ist ein System.</p></section>}
-      {seite === 'projekte' && <section><h1 className="text-2xl font-bold mb-4">Projekte</h1><p>Modular, lokal, adaptiv – vom Robo-Fisch bis Wastetainment.</p></section>}
-      {seite === 'cv' && <section><h1 className="text-2xl font-bold mb-4">Lebenslauf</h1><p>Raphael Lauper, Produktdesigner – systemisch, strukturiert, erfahren.</p></section>}
+      {seite === 'motivation' && <Motivation />}
+      {seite === 'projekte' && <Projekte />}
+      {seite === 'cv' && <Lebenslauf />}
     </div>
   );
 }
