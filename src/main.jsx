@@ -1,19 +1,30 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { projekte } from './projekte.jsx';
-import Motivation from './Motivation.jsx';
-import Lebenslauf from './Lebenslauf.jsx';
+
+import { projekte } from './projekte';
+import Motivation from './Motivation';
+import Lebenslauf from './Lebenslauf';
+import PdfExportButton from './PdfExportButton';
+import BegriffPopover from './BegriffPopover';
 
 function Projekte() {
   return (
-    <main className="p-4 space-y-12">
-      <h1 className="text-3xl font-bold text-center">Projektübersicht</h1>
+    <main className="p-6 max-w-3xl mx-auto space-y-8">
+      <h1 className="text-3xl font-bold text-primary">Projektübersicht</h1>
       {projekte.map((p, i) => (
-        <section key={i} className={`p-4 border rounded shadow bg-white ${p.hintergrund}`}>
-          <div className="text-xs uppercase tracking-wider text-gray-500 mb-1">{p.typ}</div>
-          <h2 className="text-xl font-semibold">{p.titel}</h2>
-          <p className="mt-2 text-gray-700">{p.beschreibung}</p>
+        <section
+          key={i}
+          className={`border-l-4 pl-4 border-accent bg-white/90 p-4 rounded shadow-sm`}
+        >
+          <div className="text-sm uppercase text-gray-400 font-semibold mb-1">
+            {p.typ}
+          </div>
+          <h2 className="text-xl font-semibold text-gray-800">{p.titel}</h2>
+          <p className="mt-2 text-gray-700 leading-relaxed">{p.beschreibung}</p>
+          {p.erlaeuterung && (
+            <BegriffPopover begriff={p.begriff} erklaerung={p.erlaeuterung} />
+          )}
         </section>
       ))}
     </main>
@@ -24,13 +35,34 @@ function App() {
   const [seite, setSeite] = useState('motivation');
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <header className="p-4 bg-white shadow flex gap-4 justify-center font-medium text-gray-700">
-        <button onClick={() => setSeite('motivation')} className={seite === 'motivation' ? 'underline' : ''}>Motivation</button>
-        <button onClick={() => setSeite('projekte')} className={seite === 'projekte' ? 'underline' : ''}>Projekte</button>
-        <button onClick={() => setSeite('cv')} className={seite === 'cv' ? 'underline' : ''}>Lebenslauf</button>
+    <div className="min-h-screen bg-base text-text font-sans">
+      <PdfExportButton />
+      <header className="bg-white shadow px-6 py-4 flex justify-center gap-6 sticky top-0 z-40">
+        <button
+          onClick={() => setSeite('motivation')}
+          className={seite === 'motivation' ? 'font-bold underline' : ''}
+        >
+          Motivation
+        </button>
+        <button
+          onClick={() => setSeite('projekte')}
+          className={seite === 'projekte' ? 'font-bold underline' : ''}
+        >
+          Projekte
+        </button>
+        <button
+          onClick={() => setSeite('cv')}
+          className={seite === 'cv' ? 'font-bold underline' : ''}
+        >
+          Lebenslauf
+        </button>
       </header>
-      {seite === 'motivation' ? <Motivation /> : seite === 'projekte' ? <Projekte /> : <Lebenslauf />}
+
+      <div className="p-6">
+        {seite === 'motivation' && <Motivation />}
+        {seite === 'projekte' && <Projekte />}
+        {seite === 'cv' && <Lebenslauf />}
+      </div>
     </div>
   );
 }
