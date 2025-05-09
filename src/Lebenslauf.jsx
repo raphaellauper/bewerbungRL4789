@@ -7,6 +7,16 @@ export default function Lebenslauf() {
         <h2 className="text-xl font-semibold text-accent mb-2">Persönliches</h2>
         <p>Raphael Lauper<br />Geboren am 4. Juli 1989<br />Region Bern, Schweiz</p>
       </div>
+      <div>
+  <h2 className="text-xl font-semibold text-accent mb-2">Interessen & Aktivitäten</h2>
+  <ul className="list-disc list-inside space-y-1">
+    <li>Gestaltung & freie Projekte</li>
+    <li>Wandern & Skateboard fahren</li>
+    <li>Musik machen & hören</li>
+    <li>Zeichnen, Skizzieren, Coden</li>
+    <li>Zeit mit Freund:innen & Gespräche</li>
+  </ul>
+</div>
 
       <div>
         <h2 className="text-xl font-semibold text-accent mb-2">Ausbildung</h2>
