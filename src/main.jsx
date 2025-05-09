@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-import { projekte } from './Projekte';
-import Motivation from './Motivation';
-import Lebenslauf from './Lebenslauf';
-import PdfExportButton from './PdfExportButton';
-import BegriffPopover from './BegriffPopover';
+import { projekte } from './Projekte.jsx';
+import Motivation from './Motivation.jsx';
+import Lebenslauf from './Lebenslauf.jsx';
+import PdfExportButton from './PdfExportButton.jsx';
+import BegriffPopover from './BegriffPopover.jsx';
 
 function Projekte() {
   return (
