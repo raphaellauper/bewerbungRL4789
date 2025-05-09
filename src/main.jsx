@@ -6,6 +6,7 @@ import './index.css';
 import Projekte from './Projekte.jsx';
 import Motivation from './Motivation.jsx';
 import Lebenslauf from './Lebenslauf.jsx';
+import Glossar from './Glossar.jsx';
 import PdfExportButton from './PdfExportButton.jsx';
 
 function App() {
