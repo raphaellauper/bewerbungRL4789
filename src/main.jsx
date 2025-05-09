@@ -25,14 +25,14 @@ function App() {
             Motivation
           </button>
           <button
-            onClick={() => setSeite('projekte')}
-            className={seite === 'projekte' ? 'underline underline-offset-4' : ''}
+            onClick={() => setSeite('cv')}
+            className={seite === 'cv' ? 'underline underline-offset-4' : ''}
           >
             Projekte
           </button>
           <button
-            onClick={() => setSeite('cv')}
-            className={seite === 'cv' ? 'underline underline-offset-4' : ''}
+            onClick={() => setSeite('projekte')}
+            className={seite === 'projekte' ? 'underline underline-offset-4' : ''}
           >
             Lebenslauf
           </button>
