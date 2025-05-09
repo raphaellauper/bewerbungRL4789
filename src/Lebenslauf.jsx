@@ -45,7 +45,7 @@ export default function Lebenslauf() {
           <li>Deutsch – Muttersprache</li>
           <li>Französisch – bilingual aufgewachsen</li>
           <li>Englisch – fliessend</li>
-          <li>Japanisch - C1</li>
+          <li>Japanisch – C1</li>
           <li>Schwedisch seit Sommer 2024</li>
         </ul>
       </div>
