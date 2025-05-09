@@ -6,30 +6,6 @@ import Projekte from './Projekte.jsx';
 import Motivation from './Motivation.jsx';
 import Lebenslauf from './Lebenslauf.jsx';
 import PdfExportButton from './PdfExportButton.jsx';
-import BegriffPopover from './BegriffPopover.jsx';
-
-function Projekte() {
-  return (
-    <main className="p-6 max-w-3xl mx-auto space-y-8">
-      <h1 className="text-3xl font-bold text-primary">Projektübersicht</h1>
-      {projekte.map((p, i) => (
-        <section
-          key={i}
-          className={`border-l-4 pl-4 border-accent bg-white/90 p-4 rounded shadow-sm`}
-        >
-          <div className="text-sm uppercase text-gray-400 font-semibold mb-1">
-            {p.typ}
-          </div>
-          <h2 className="text-xl font-semibold text-gray-800">{p.titel}</h2>
-          <p className="mt-2 text-gray-700 leading-relaxed">{p.beschreibung}</p>
-          {p.erlaeuterung && (
-            <BegriffPopover begriff={p.begriff} erklaerung={p.erlaeuterung} />
-          )}
-        </section>
-      ))}
-    </main>
-  );
-}
 
 function App() {
   const [seite, setSeite] = useState('motivation');
