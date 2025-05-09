@@ -1,7 +1,7 @@
 export default function Motivation() {
   return (
     <section className="max-w-prose mx-auto px-6 py-12 bg-[#fcfcfc] text-gray-900 text-[1.1rem] leading-[1.65] tracking-normal text-justify">
-      <h1 className="text-3xl font-bold text-primary mb-6">Motivationsschreiben</h1>
+      <h1 className="text-3xl font-bold text-primary mb-6">Bewerbung als Produktdesigner 80-100%</h1>
 
       <p className="mb-5">
         Sehr geehrte Frau Pfeiffer,
