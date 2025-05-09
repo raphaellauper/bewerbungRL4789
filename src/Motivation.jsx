@@ -1,6 +1,6 @@
 export default function Motivation() {
   return (
-    <section className="max-w-prose mx-auto px-6 py-12 bg-white/80 rounded-xl shadow-md leading-relaxed text-[1.05rem] text-justify tracking-normal">
+    <section className="max-w-prose mx-auto px-6 py-12 bg-[#fcfcfc] text-gray-900 text-[1.1rem] leading-[1.65] tracking-normal text-justify">
       <h1 className="text-3xl font-bold text-primary mb-6">Motivationsschreiben</h1>
 
       <p className="mb-5">
@@ -8,23 +8,23 @@ export default function Motivation() {
       </p>
 
       <p className="mb-5">
-        Es gibt Stellenanzeigen, die klar sagen, was sie suchen und solche, die gleichzeitig zeigen, wie gedacht wird. Ihre gehört zur zweiten Sorte. Deshalb hat sie mich sofort angesprochen.
+        Ihre Ausschreibung im Bereich Produktentwicklung bei Duscholux hat mich sofort angesprochen. Sie zeigt, dass Sie nicht nur Verstärkung suchen, sondern eine gestalterisch denkende Persönlichkeit, die Verantwortung übernehmen und Entwicklung mittragen kann. In dieser Rolle sehe ich mich.
       </p>
 
       <p className="mb-5">
-        Als Designer mit Technikverständnis, Strukturwille und Systemdenke bewege ich mich dort, wo Gestaltung nicht aufhört, sobald etwas gut aussieht. Ich arbeite dort weiter, wo sich Funktion, Material und Nutzerverhalten treffen.
+        Als Produktdesigner mit systemischem Verständnis und technischem Hintergrund bin ich mit Prozessen vertraut, die über die reine Formgebung hinausgehen. Ich denke Gestaltung als Verbindung von Funktion, Material, Sprache und Anwendung. Meine Arbeitsweise ist ruhig, strukturiert und klar in der Absicht.
       </p>
 
       <p className="mb-5">
-        In Projekten wie <em>Aarulon</em>, der <em>Fischerei-App</em> oder partizipativen Objekten wie <em>Wastetainment</em> verbinde ich Systemverständnis mit Formkultur – immer mit dem Ziel, Zusammenhänge sichtbar und nutzbar zu machen.
+        Besonders schätze ich an Duscholux die Konsequenz in der Gestaltungssprache und die Haltung, Produkte nicht nur zu gestalten, sondern sie bewusst zu entwickeln. Diese Verbindung von Klarheit und Dauerhaftigkeit passt zu meinem eigenen Verständnis von Design.
       </p>
 
       <p className="mb-5">
-        Duscholux steht für Reduktion mit Haltung – und genau darin erkenne ich auch meine eigene Arbeitsweise. Ich würde mich freuen, Ihre Produkte, Prozesse oder Materialien mitdenken und mitgestalten zu dürfen.
+        Ich bin überzeugt, dass ich mich mit meiner Fähigkeit zur Analyse, meiner Erfahrung mit technischen Schnittstellen und meiner gestalterischen Verantwortung in Ihre Produktentwicklung sinnvoll einbringen kann.
       </p>
 
       <p className="mb-5">
-        Für Rückfragen oder ein Gespräch stehe ich gerne zur Verfügung. Ich danke Ihnen für Ihre Zeit – und für eine Anzeige, die mehr ist als nur ein Anforderungskatalog.
+        Gerne erläutere ich Ihnen meine Arbeitsweise in einem persönlichen Gespräch. Mein vollständiges Dossier stelle ich Ihnen bei Interesse jederzeit zur Verfügung.
       </p>
 
       <p className="mt-8">Mit freundlichen Grüssen<br />Raphael Lauper</p>
