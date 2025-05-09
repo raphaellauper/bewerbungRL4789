@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-import { projekte } from './projekte';
+import { projekte } from './Projekte';
 import Motivation from './Motivation';
 import Lebenslauf from './Lebenslauf';
 import PdfExportButton from './PdfExportButton';
