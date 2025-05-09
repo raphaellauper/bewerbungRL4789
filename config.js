@@ -1,4 +1,3 @@
-// /src/config.js
 export default {
   firma: 'Duscholux',
   stelle: 'Produktdesigner',
