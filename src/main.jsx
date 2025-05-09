@@ -28,13 +28,13 @@ function App() {
             onClick={() => setSeite('cv')}
             className={seite === 'cv' ? 'underline underline-offset-4' : ''}
           >
-            Projekte
+            Lebenslauf
           </button>
           <button
             onClick={() => setSeite('projekte')}
             className={seite === 'projekte' ? 'underline underline-offset-4' : ''}
           >
-            Lebenslauf
+            Projekte
           </button>
         </nav>
       </header>
