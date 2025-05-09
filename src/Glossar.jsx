@@ -1,4 +1,4 @@
-import config from '../config.json';
+import config from '../config.js';
 
 export default function Glossar() {
   if (!config.includeGlossar) return null;
