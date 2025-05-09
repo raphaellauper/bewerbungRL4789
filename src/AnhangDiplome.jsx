@@ -13,7 +13,7 @@ export default function AnhangDiplome() {
       pfad: '/diplome/zwischenbescheinigung_phbern.pdf'
     },
     {
-      titel: 'Arbeitszeugnis ISA AG',
+      titel: 'Arbeitszeugnisse',
       pfad: '/diplome/arbeitszeugnis_isa.pdf'
     }
   ];
