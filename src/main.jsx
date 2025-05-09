@@ -1,19 +1,19 @@
-import Footer from './Footer.jsx';
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-import Projekte from './Projekte.jsx';
 import Motivation from './Motivation.jsx';
+import Projekte from './Projekte.jsx';
 import Lebenslauf from './Lebenslauf.jsx';
 import Glossar from './Glossar.jsx';
+import Footer from './Footer.jsx';
 import PdfExportButton from './PdfExportButton.jsx';
 
 function App() {
   const [seite, setSeite] = useState('motivation');
 
   return (
-    <div className="min-h-screen bg-base text-text font-sans">
+    <div className="min-h-screen flex flex-col bg-base text-text font-sans">
       <PdfExportButton />
 
       <header className="bg-surface text-text border-b border-border sticky top-0 z-50 shadow-sm px-6 py-4">
@@ -39,14 +39,20 @@ function App() {
         </nav>
       </header>
 
-      <main className="grid grid-cols-1 md:grid-cols-12 gap-4 px-4 md:px-8 py-6">
-        <Footer />
-        <div className="md:col-start-2 md:col-span-10">
+      <main className="flex-grow grid grid-cols-1 md:grid-cols-12 gap-4 px-4 md:px-8 py-6">
+        <div className="md:col-start-2 md:col-span-10 space-y-8">
           {seite === 'motivation' && <Motivation />}
           {seite === 'projekte' && <Projekte />}
-          {seite === 'cv' && <Lebenslauf />}
+          {seite === 'cv' && (
+            <>
+              <Lebenslauf />
+              <Glossar />
+            </>
+          )}
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }
