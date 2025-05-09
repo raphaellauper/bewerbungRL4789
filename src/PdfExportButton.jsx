@@ -56,7 +56,8 @@ export default function PdfExportButton() {
     }
   }
 
-  return (
+  return (false);
+    /*
     <button
       onClick={exportiereDossier}
       className={`no-print fixed bottom-6 right-6 z-50 bg-accent text-white text-sm px-4 py-2 rounded-full shadow-lg hover:bg-highlight transition-all ${
@@ -65,5 +66,5 @@ export default function PdfExportButton() {
     >
       {generiert ? 'Wird erstellt...' : 'Dossier speichern'}
     </button>
-  );
+  );*/
 }
