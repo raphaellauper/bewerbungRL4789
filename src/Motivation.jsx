@@ -8,7 +8,7 @@ export default function Motivation() {
       </p>
 
       <p className="mb-5">
-        Es gibt Stellenanzeigen, die klar sagen, was sie suchen – und solche, die gleichzeitig zeigen, wie gedacht wird. Ihre gehört zur zweiten Sorte. Deshalb hat sie mich sofort angesprochen.
+        Es gibt Stellenanzeigen, die klar sagen, was sie suchen und solche, die gleichzeitig zeigen, wie gedacht wird. Ihre gehört zur zweiten Sorte. Deshalb hat sie mich sofort angesprochen.
       </p>
 
       <p className="mb-5">
