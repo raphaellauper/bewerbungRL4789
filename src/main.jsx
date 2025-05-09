@@ -42,13 +42,13 @@ function App() {
       <main className="flex-grow grid grid-cols-1 md:grid-cols-12 gap-4 px-4 md:px-8 py-6">
         <div className="md:col-start-2 md:col-span-10 space-y-8">
           {seite === 'projekte' && <Projekte />}
-          {seite === 'motivation' && <Motivation />}
           {seite === 'cv' && (
             <>
               <Lebenslauf />
               <Glossar />
             </>
           )}
+          {seite === 'motivation' && <Motivation />}
         </div>
       </main>
 
