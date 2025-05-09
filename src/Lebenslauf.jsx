@@ -21,12 +21,16 @@ export default function Lebenslauf() {
           <span className="absolute top-0 right-0 text-xs text-muted pr-1 pt-1 pointer-events-none">[i]</span>
         </div>
       </div>
-
       <div>
         <h2 className="text-xl font-semibold text-accent mb-2">Persönliches</h2>
-        <p>Raphael Lauper<br />Geboren am 4. Juli 1989<br />{config.adresse}</p>
-      </div>
-
+        <p>
+    Raphael Lauper<br />
+    Geboren am 4. Juli 1989<br />
+    {config.adresse}<br />
+    Telefon: 079 235 68 89<br />
+    Mail: laurel.paraphe@gmail.com
+  </p>
+</div>
       <div>
         <h2 className="text-xl font-semibold text-accent mb-2">Ausbildung</h2>
         <ul className="list-disc list-inside space-y-1">
