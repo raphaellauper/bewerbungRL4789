@@ -8,17 +8,6 @@ export default function Lebenslauf() {
         <p>Raphael Lauper<br />Geboren am 4. Juli 1989<br />Region Bern, Schweiz</p>
       </div>
       <div>
-  <h2 className="text-xl font-semibold text-accent mb-2">Interessen & Aktivitäten</h2>
-  <ul className="list-disc list-inside space-y-1">
-    <li>Gestaltung & freie Projekte</li>
-    <li>Wandern & Skateboard fahren</li>
-    <li>Musik machen & hören</li>
-    <li>Zeichnen, Skizzieren, Coden</li>
-    <li>Zeit mit Freund:innen & Gespräche</li>
-  </ul>
-</div>
-
-      <div>
         <h2 className="text-xl font-semibold text-accent mb-2">Ausbildung</h2>
         <ul className="list-disc list-inside space-y-1">
           <li>2011–2014: HGK-FHNW Basel, Bachelor in Produktdesign</li>
@@ -51,17 +40,27 @@ export default function Lebenslauf() {
           <li>Designverständnis: Systemgestaltung, Visualisierung, Prototyping</li>
         </ul>
       </div>
+    <div>
+  <h2 className="text-xl font-semibold text-accent mb-2">Sprachen</h2>
+  <ul className="list-disc list-inside space-y-1">
+    <li>Deutsch – Muttersprache</li>
+    <li>Französisch – bilingual</li>
+    <li>Englisch – fliessend</li>
+  </ul>
+</div>
 
-      <div>
-        <h2 className="text-xl font-semibold text-accent mb-2">Sprachen</h2>
-        <ul className="list-disc list-inside">
-          <li>Deutsch – Muttersprache</li>
-          <li>Französisch – bilingual aufgewachsen</li>
-          <li>Englisch – fliessend</li>
-          <li>Japanisch – C1</li>
-          <li>Schwedisch lernend seit Sommer 2024</li>
-        </ul>
-      </div>
+<div>
+  <h2 className="text-xl font-semibold text-accent mb-2">Interessen & Aktivitäten</h2>
+  <ul className="list-disc list-inside space-y-1">
+    <li>Gestaltung & freie Projekte</li>
+    <li>Wandern & Skateboard fahren</li>
+    <li>Musik machen & hören</li>
+    <li>Zeichnen, Skizzieren, Coden</li>
+    <li>Zeit mit Freund:innen & Gespräche</li>
+  </ul>
+</div>
+
+      
     </section>
   );
 }
