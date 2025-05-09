@@ -24,10 +24,12 @@ export default function Motivation() {
       </p>
 
       <p className="mb-5">
-        Gerne erläutere ich Ihnen meine Arbeitsweise in einem persönlichen Gespräch. Mein vollständiges Dossier stelle ich Ihnen bei Interesse jederzeit zur Verfügung.
+        Gerne erläutere ich Ihnen meine Arbeitsweise in einem persönlichen Gespräch. Mein Bewerbungsdossier ist komplett auf dem grünen Button als Download erhältlich.
       </p>
 
       <p className="mt-8">Mit freundlichen Grüssen<br />Raphael Lauper</p>
+      </p>
+  
     </section>
   );
 }
