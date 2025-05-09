@@ -24,7 +24,7 @@ export default function Lebenslauf() {
 
       <div>
         <h2 className="text-xl font-semibold text-accent mb-2">Persönliches</h2>
-        <p>Raphael Lauper<br />Geboren am 4. Juli 1989<br />Bahnhofstrasse 56, 3127 Mühlethurnen</p>
+        <p>Raphael Lauper<br />Geboren am 4. Juli 1989<br />{config.adresse}</p>
       </div>
 
       <div>
@@ -34,6 +34,8 @@ export default function Lebenslauf() {
           <li>2014–2015: BFH Technik & Informatik – Mikrotechnik (ohne Abschluss)</li>
           <li>2020–2021: PH Bern – Sekundarstufe I (Zwischenlösung während Corona)</li>
           <li>2009–2010: Vorkurs Gestaltung – SfGBB Bern</li>
+          <li>2008–2009: Rekrutenschule als Füsilier, Chamblon/Bure</li>
+          <li>2004–2008: Gymnasium Hofwil, Münchenbuchsee</li>
         </ul>
       </div>
 
@@ -54,10 +56,30 @@ export default function Lebenslauf() {
           <li>3D/CAD: Rhino, Fusion 360, AutoCAD, Inventor</li>
           <li>Web & Code: React, Tailwind, Git, Markdown, JSON</li>
           <li>Hardware: Arduino, Raspberry Pi, Sensorik, Prototyping</li>
-          <li>Design: Systemdenken, User-Interface, gestalterische Verantwortung</li>
+          <li>Design: Systemdenken, Interface-Logik, gestalterische Verantwortung</li>
         </ul>
       </div>
 
       <div>
         <h2 className="text-xl font-semibold text-accent mb-2">Sprachen</h2>
-        <ul className="list-disc list-inside
+        <ul className="list-disc list-inside space-y-1">
+          <li>Deutsch – Muttersprache</li>
+          <li>Französisch – bilingual</li>
+          <li>Englisch – fliessend</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 className="text-xl font-semibold text-accent mb-2">Interessen & Aktivitäten</h2>
+        <ul className="list-disc list-inside space-y-1">
+          <li>Gestaltung & freie Projekte</li>
+          <li>Wandern & Skateboard fahren</li>
+          <li>Musik machen & hören</li>
+          <li>Zeichnen, Skizzieren, Coden</li>
+          <li>Zeit mit Freund:innen & Gespräche</li>
+        </ul>
+      </div>
+
+    </section>
+  );
+}
