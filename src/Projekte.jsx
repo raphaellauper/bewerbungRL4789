@@ -14,13 +14,13 @@ const projekte = [
   },
   {
     titel: "Fischerei-App 2.0",
-    typ: "Eigenentwicklung",
+    typ: "Eigenentwicklung / Zusammenarbeit",
     beschreibung: "Kontextsensitive App zur waidmännischen Fischerei. Sensorik, Schonzeitdaten, Airgap-Modus und ethisch begründete Entscheidungshilfen.",
     begriff: "Airgap-Modus",
     erlaeuterung: "Ein Betriebszustand ohne Netzwerkverbindung – maximale Sicherheit für sensible Daten.",
     bild: "/img/fischerei.jpg",
     farbe: "accent",
-    vertraulich: false
+    vertraulich: true
   },
   {
     titel: "ISA AG – Sicherheitsinterface",
@@ -30,6 +30,38 @@ const projekte = [
     farbe: "grau",
     vertraulich: true
   }
+  {
+  titel: "Cellwar GmbH – Technisches Industriedesign",
+  typ: "Praktikum (2015)",
+  beschreibung: "Konzeption und Umsetzung produktnaher Designlösungen. CAD, Materialwahl, Präsentations- und Entwicklungsarbeit.",
+  bild: "/img/cellwar.jpg",
+  farbe: "accent",
+  vertraulich: false
+},
+{
+  titel: "Wettstein Kältetechnik",
+  typ: "Praktikum (2013)",
+  beschreibung: "Mikrotechnische Entwicklung. Zeichnungen, Materialauswahl und Prozessbegleitung im technischen Umfeld.",
+  bild: "/img/wettstein.jpg",
+  farbe: "primary",
+  vertraulich: false
+},
+{
+  titel: "Schmutz Architekten",
+  typ: "Praktikum (2010)",
+  beschreibung: "CAD-Zeichnungen, 3D-Visualisierungen, Mitarbeit an architektonischen Entwurfskonzepten.",
+  bild: "/img/schmutz.jpg",
+  farbe: "grau",
+  vertraulich: false
+},
+{
+  titel: "Freie Projekte & Workshops",
+  typ: "Eigeninitiative",
+  beschreibung: "Upcycling-Objekte (z. B. Waschmaschinensoundsystem), Holzuhren, Logos, Dosenradio-Workshops, PoS-Prototypen.",
+  bild: "/img/projekte.jpg",
+  farbe: "accent",
+  vertraulich: false
+}
 ];
 
 export default function Projekte() {
