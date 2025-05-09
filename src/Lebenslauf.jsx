@@ -51,6 +51,8 @@ export default function Lebenslauf() {
           <li>2013: Praktikum Wettstein Kältetechnik – Mikrotechnische Entwicklung</li>
           <li>2010: Praktikum Schmutz Architekten – CAD & Visualisierung</li>
           <li>2017–2020: Projektarbeit für SBB, PostFinance, ISA AG</li>
+          <li>2020-2023: Diverse Stellvertretungen als Lehrperson, Verteilt im Kanton Bern</li>
+          <li>2022-2025: Klassenlehrer an der 9. Klasse Real, Riggisberg</li>
         </ul>
       </div>
 
