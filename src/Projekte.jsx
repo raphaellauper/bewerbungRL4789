@@ -29,7 +29,7 @@ const projekte = [
     bild: "/img/isa_placeholder.jpg",
     farbe: "grau",
     vertraulich: true
-  }
+  },
   {
   titel: "Cellwar GmbH – Technisches Industriedesign",
   typ: "Praktikum (2015)",
