@@ -5,5 +5,6 @@
   "pdfName": "bewerbung_duscholux.pdf",
   "includeDiplome": true,
   "farbe": "#1f2937",
-  "accent": "#16a34a"
+  "accent": "#16a34a",
+  "includeGlossar": true
 }
