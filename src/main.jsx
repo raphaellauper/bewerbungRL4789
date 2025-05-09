@@ -39,6 +39,7 @@ function App() {
       </header>
 
       <main className="grid grid-cols-1 md:grid-cols-12 gap-4 px-4 md:px-8 py-6">
+        <Footer />
         <div className="md:col-start-2 md:col-span-10">
           {seite === 'motivation' && <Motivation />}
           {seite === 'projekte' && <Projekte />}
