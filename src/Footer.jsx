@@ -1,19 +1,21 @@
+import config from './config.js';
+
 export default function Footer() {
   return (
-    <footer className="text-muted text-xs text-center py-6 border-t border-border bg-surface mt-12 no-print">
+    <footer className="text-muted text-xs text-center py-6 border-t border-border bg-base mt-12 print:pt-12">
       <p className="mb-1">
-        © {new Date().getFullYear()} Raphael Lauper
+        © {config.jahr} Raphael Lauper
       </p>
-      <p className="mb-2">
-        Entwickelt & strukturiert mit Fokus auf Verantwortung, Klarheit & Gestaltung
+      <p className="mb-1">
+        {config.adresse}
       </p>
       <p>
-        Bahnhofstrasse 56, 3127 Mühlethurnen<br />
+        Mail:{' '}
         <a
-          href="mailto:laurelparaphe@gmail.com"
+          href={`mailto:${config.mail}`}
           className="text-accent hover:underline"
         >
-          laurelparaphe@gmail.com
+          {config.mail}
         </a>
       </p>
     </footer>
