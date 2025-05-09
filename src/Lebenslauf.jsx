@@ -11,10 +11,13 @@ export default function Lebenslauf() {
       <div>
         <h2 className="text-xl font-semibold text-accent mb-2">Ausbildung</h2>
         <ul className="list-disc list-inside space-y-1">
-          <li>2011–2014: FHNW Basel, HyperWerk – Bachelor in Produktdesign</li>
-          <li>2014–2015: BFH Technik & Informatik – Mikrotechnik (ohne Abschluss)</li>
+          <li>2011–2014: HGK-FHNW Basel, Bachelor in Produktdesign</li>
+          <li>2014–2018: BFH-TI, Mikrotechnik (weiterführende Kurse)</li>
           <li>2020–2021: PH Bern – Sekundarstufe I (Zwischenlösung während Corona)</li>
           <li>2009–2010: Vorkurs Gestaltung – SfGBB Bern</li>
+          </ul>
+          <li>2008-2009: Rekrutenschule als Füsilier, Chamblon/Bure</li>
+          <li>2004-2008: Gymnasium Hofwil, Münchenbuchsee</li>
         </ul>
       </div>
 
@@ -25,7 +28,7 @@ export default function Lebenslauf() {
           <li>2015: Praktikum Cellwar GmbH – Technisches Industriedesign</li>
           <li>2013: Praktikum Wettstein Kältetechnik – Ingenieurshilfe Mikrotechnik</li>
           <li>2010: Praktikum Schmutz Architekten – CAD & Visualisierung</li>
-          <li>2017–2020: Projektarbeit für SBB, PostFinance, ISA AG und geheimhaltungspflichtige Organisationen</li>
+          <li>2015–2020: Projektarbeiten u.a. für SBB, PostFinance, Kuhn Rikon und geheimhaltungspflichtige Organisationen</li>
         </ul>
       </div>
 
@@ -46,7 +49,7 @@ export default function Lebenslauf() {
           <li>Französisch – bilingual aufgewachsen</li>
           <li>Englisch – fliessend</li>
           <li>Japanisch – C1</li>
-          <li>Schwedisch seit Sommer 2024</li>
+          <li>Schwedisch lernend seit Sommer 2024</li>
         </ul>
       </div>
     </section>
