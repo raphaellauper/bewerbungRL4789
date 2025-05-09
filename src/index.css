@@ -2,21 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Lesetypografie */
+/* Grundlayout */
 body {
-  @apply font-sans text-text bg-base leading-relaxed;
+  @apply font-sans bg-base text-text leading-relaxed tracking-normal;
   max-width: 100vw;
   overflow-x: hidden;
 }
 
-/* Druckoptimierung */
+/* Textbereiche */
+section {
+  @apply bg-surface rounded-xl shadow-md p-6 md:p-10;
+}
+
+/* Mobil = linksbündig */
+@media (max-width: 640px) {
+  p {
+    text-align: left !important;
+  }
+}
+
+/* Desktop = Blocksatz */
+@media (min-width: 641px) {
+  p {
+    text-align: justify;
+  }
+}
+
+/* PDF/Druckoptimierung */
 @media print {
   body {
     background: white !important;
-    color: #111827 !important;
+    color: #111 !important;
     font-size: 11pt;
-    line-height: 1.45;
-    margin: 0;
+    line-height: 1.5;
     padding: 0;
   }
 
@@ -24,18 +42,17 @@ body {
     display: none !important;
   }
 
-  button, nav, .bg-gray-50, .shadow {
+  button, nav, .shadow, .rounded-xl {
     display: none !important;
   }
 
   section {
     page-break-inside: avoid;
-    page-break-after: auto;
     padding: 0 !important;
-    margin: 0 0 1.5rem 0;
+    margin-bottom: 2rem;
   }
 
   h1, h2, h3 {
-    color: #111;
+    color: #000;
   }
 }
