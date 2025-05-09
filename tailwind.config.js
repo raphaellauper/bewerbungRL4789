@@ -3,17 +3,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#1f2937",      // Graphitblau für Titel, Hervorhebungen
-        accent: "#16a34a",       // Fokusgrün für Icons, Kategorien
-        base: "#f9fafb",         // Papierähnlich hell für Hintergrund
-        text: "#111827",         // Fließtext fast Schwarz
-        grau: "#e5e7eb"          // Flächenhelligkeit
+        base: '#1f1f22',       // Seitenhintergrund
+        surface: '#2f333a',    // Karten, Content-Flächen
+        border: '#3b3f46',     // Linien, Ränder
+        text: '#e5e5e5',       // Fließtext
+        muted: '#a1a1aa',      // Labels, Hinweise
+        accent: '#16a34a',     // Aktionen (z. B. Button)
+        highlight: '#4ade80',  // Sekundäraktion
+        error: '#ef4444'       // Validierung, Warnungen
       },
       fontFamily: {
         sans: ['ui-sans-serif', 'system-ui', 'sans-serif']
       },
       maxWidth: {
-        prose: '65ch' // optimal für Lesetext
+        prose: '65ch'
       }
     },
   },
