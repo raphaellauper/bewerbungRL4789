@@ -1,3 +1,4 @@
+import React from 'react';
 import BegriffPopover from './BegriffPopover';
 
 const projekte = [
